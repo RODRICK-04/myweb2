@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY FIRST WEB PAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+<body>
+    <button id="themeButton" onclick="changeAppearance()">Dark Mode</button>
+    <header>
+        <h1>WELCOME TO THE WORLD OF WEB PROGRAMMING</h1>
+    </header>
+    
+    <nav>
+        <a href="#about">about me</a>
+        <a href="#hobbies">my hobbies</a>
+        <a href="#learning">my learning plan</a>
+        <a href="#photos">my photos</a>
+        <a href="#media">my media</a>
+        <a href="#contact">contact me</a>
+        <a href="#skills">my skills</a>
+        <a href="https://developer.mozilla.org/en-US/docs/learn_web_development" target="_blank">Learn Web Development</a>
+    </nav>
+    <main>
+   
+    <h2>RODRICK MBEWE  : 202510599</h2>
+    <section id="about">
+        <h2>about me</h2>
+        <p>My name is Rodrick Mbewe, I am a student at Mulungushi University pursuing a degree in Computer Science. I have a passion for technology and enjoy exploring new advancements in the field. In my free time, I like to read tech blogs and experiment with coding projects.  my goal is to improve practical skills and confident indeveloping useful and creative computer solutions for my future career.</p>
+    </section>
+    <section id="hobbies">
+        <h2>my hobbies</h2>
+        <ul>
+            <li>Listening to music</li>
+            <li>Discovering new things</li>
+            <li>Playing video games</li>
+        </ul>
+    </section>
+    <section id="learning">
+        <h2>my learning plan</h2>
+        <ol>
+            <li>practice HTML and css regularly</li>
+            <li>build small websites to improve my skills</li>
+            <li>learn JavaScript to add interactivity to my websites</li>
+        </ol>
+        <table>
+            <tr>
+                <th>day</th>
+                <th>topic</th>
+                <th>practice</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>HTML Basics</td>
+                <td>Practice creating simple HTML pages</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>CSS Basics</td>
+                <td>Practice styling HTML pages with CSS</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>JavaScript Basics</td>
+                <td>Practice adding interactivity to web pages with JavaScript</td>
+            </tr>
+        </table>
+    </section>
+    <section id="photos" class="gallery">
+        <h2>my photos</h2>
+       <div class="photo-gallery">
+    <figure>
+        <img id="galleryImage" src="images/picture1.jpg"
+             alt="A photo of me" width="300">
+        <figcaption id="galleryCaption">A photo of me.</figcaption>
+    </figure>
+
+    <div class="gallery-controls">
+        <button type="button" onclick="previousPhoto()">❮ Previous</button>
+        <button type="button" onclick="nextPhoto()">Next ❯</button>
+    </div>
+</div>
+    </section>
+    <section id="media">
+        <h2>my media</h2>
+        <h3>my introduction video</h3>
+        <video controls width="500">
+            <source src="videos/intro1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>this video is a short introduction about me, my computer science programme, and web technologies skills I want to learn.</p>
+    </section>
+    <section id="media">
+    <h2>My Audio</h2>
+
+    <audio controls>
+        <source src="videos/voice.mp3" type="audio/mpeg">
+
+<p>Listen to my voice recording explaining myhobbies:</p>
+        Your browser does not support audio.
+        
+    </audio>
+</section>
+     <section id="contact">
+        <h2>contact me</h2>
+       <form id="contactForm" action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="topic">Topic:</label>
+    <input type="text" id="topic" name="topic" required>
+    <br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<div id="formFeedback" role="status" aria-live="polite"></div>
+
+<section id="messagePreview" hidden>
+    <h3>Message Preview</h3>
+    <p><strong>Name:</strong> <span id="previewName"></span></p>
+    <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+    <p><strong>Topic:</strong> <span id="previewTopic"></span></p>
+    <p><strong>Message:</strong> <span id="previewMessage"></span></p>
+    <p><em>Browser demonstration only — no message is sent.</em></p>
+</section>
+    </section>
+    <section id="skills">
+    <h2>My Skills</h2>
+
+    <article>
+        <h3>HTML</h3>
+        <p>I am learning to structure web pages using HTML elements.</p>
+    </article>
+
+    <article>
+        <h3>CSS</h3>
+        <p>I am learning to style web pages using colours, spacing, and responsive layouts.</p>
+    </article>
+
+    <article>
+        <h3>JavaScript</h3>
+        <p>I am learning to add interactive features such as a photo gallery, a theme switch, and contact form validation.</p>
+    </article>
+</section>
+    </main>
+    <foot>
+        <p>&copy; 2026 Rodrick. all rights reserved.</p>
+    
+    </foot>
+    
+    <ul>
+        <li> I like listening to music</li>
+        <li> I like discoring New things </li>
+        <li> I like playing video games</li>
+    </ul>
+</body>
+</html>
